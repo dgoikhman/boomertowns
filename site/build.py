@@ -119,7 +119,7 @@ function draw(){var c=document.getElementById("t-c").value,v=document.getElement
 var f=T.filter(t=>(!c||t.city==c)&&(!v||t.vertical==v)&&t.age>=a);
 document.getElementById("t-count").textContent=f.length+" locked targets match";
 document.getElementById("t-list").innerHTML=f.slice(0,40).map(t=>
- '<div class="tcard"><div class="blurline"></div><div class="p">'+t.vertical.replace(/-/g," ")+' · ~'+t.age+' years in business</div>'+
+ '<div class="tcard">'+(t.boom?'<span style="float:right;color:#8A5A2B;font-weight:700">Boom Meter '+t.boom+' · '+t.band+'</span>':'')+'<div class="blurline"></div><div class="p">'+t.vertical.replace(/-/g," ")+' · ~'+t.age+' years in business</div>'+
  '<div class="mline">'+t.city+', CO · one of '+t.pool+' aged '+t.vertical.replace(/-/g," ")+' businesses here · typical independent revenue: '+t.rev_band+' (modeled, industry-level)</div>'+
  '<div class="mline">Name, exact age &amp; profile unlock with membership</div></div>').join("");}
 ["t-c","t-v","t-a"].forEach(i=>document.getElementById(i).addEventListener("change",draw));draw();
@@ -170,7 +170,7 @@ INDEX = """
 <h1>The businesses most likely to sell next — found before they're listed</h1>
 <p class="lede">BoomerTowns maps the silver tsunami — long-tenured, founder-owned businesses approaching ownership transition. Launch state: Colorado. <b>{{ top.c.city }}</b> leads with {{ top.c.share20 }}% of {{ "{:,}".format(top.c.total_active) }} active businesses registered 20+ years (Succession Score {{ top.score }}/100), per Secretary of State records.</p>
 {% if teaser %}<h2 style="margin-top:18px">Today's top succession targets</h2>
-{% for t in teaser %}<div class="tcard"><div class="blurline"></div><div class="p">{{ t.vertical.replace("-", " ") }} · ~{{ t.age }} years in business</div>
+{% for t in teaser %}<div class="tcard">{% if t.boom %}<span style="float:right;color:var(--accent);font-weight:700">Boom Meter {{ t.boom }} · {{ t.band }}</span>{% endif %}<div class="blurline"></div><div class="p">{{ t.vertical.replace("-", " ") }} · ~{{ t.age }} years in business</div>
 <div class="mline">{{ t.city }}, CO · typical independent revenue {{ t.rev_band }} (modeled)</div></div>
 {% endfor %}<p class="quick"><b><a href="{{ base }}/targets/">See all targets — names unlock with membership →</a></b></p>{% endif %}
 <h2>Explore the towns behind the targets</h2>
@@ -183,6 +183,8 @@ INDEX = """
 METHOD = """
 <h1>Succession Score methodology</h1>
 <p class="lede">The Succession Score is a 0-100 city index of how concentrated the coming business-ownership handover is, computed from public registry filing dates: the share of active businesses registered 20+ years ago (45%), 30+ years (25%), and the absolute depth of aged businesses (30%).</p>
+<h2>The Boom Meter</h2>
+<p>Individual businesses carry a <b>Boom Meter</b> reading (0-100): how loudly the succession signals are ringing. v1 weighs tenure (45%), silver-wave industry (30%), and market fragmentation (25%); as verified-operator layers land (license boards, carrier registries, SBA history, digital-decay signals, owner-age context), weights rebalance per the published spec. Bands: Quiet, Building, Loud, <b>Boom</b>. As everywhere on this site: a reading describes registry-data patterns, never an owner's intent.</p>
 <h2>Sources & limits</h2>
 <p>State Secretary of State registries (currently Colorado). Registration age is a proxy for operating tenure — it can overstate (shelf entities) or understate (re-registrations) individual cases; at city scale these wash toward signal. Revenue figures, when they appear in future tools, are modeled bands from IRS Statistics of Income and Census County Business Patterns benchmarks — individual private-company revenue is not public data, from anyone.</p>
 <h2>What it is not</h2>

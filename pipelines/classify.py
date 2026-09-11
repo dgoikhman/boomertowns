@@ -132,6 +132,25 @@ REV_BANDS = {  # typical annual revenue for an independent shop — modeled from
  "storage": "$200K–$1M",
 }
 
+# ---- The Boom Meter: business-level succession signal, 0-100 --------------
+# v1 (computable today): tenure 45%, silver-wave vertical 30%, fragmentation
+# context 25%. v2 re-weights as national layers land (see SPEC.md):
+# tenure 30, verified-operator 15, wave 15, digital decay 15, owner-age
+# context 10, SBA financeability 10, fragmentation 5.
+WAVE = {"hvac", "plumbing", "electrical", "roofing", "auto-repair",
+        "manufacturing", "distribution-wholesale", "funeral",
+        "trucking-logistics", "cleaning-laundry", "storage", "machine"}
+
+def boom_meter(age, vertical, pool):
+    tenure = max(0.0, min(1.0, (age - 15) / 35)) * 100
+    wave = 100 if vertical in WAVE else 55
+    frag = max(0.0, min(1.0, pool / 40)) * 100
+    score = round(0.45 * tenure + 0.30 * wave + 0.25 * frag)
+    band = ("Boom" if score >= 80 else "Loud" if score >= 65
+            else "Building" if score >= 50 else "Quiet")
+    return score, band
+
+
 def targets():
     """Public-safe teaser feed: only cells with >=8 candidates (k-anonymity),
     no names, ages rounded, revenue = industry-typical modeled band."""
@@ -149,11 +168,12 @@ def targets():
             continue
         ages.sort(reverse=True)
         for a in ages[:3]:
+            bscore, bband = boom_meter(a, vert, len(ages))
             out.append({"city": city, "vertical": vert,
                         "age": int(round(a / 5.0) * 5),
-                        "pool": len(ages),
+                        "pool": len(ages), "boom": bscore, "band": bband,
                         "rev_band": REV_BANDS.get(vert, "$250K–$1M")})
-    out.sort(key=lambda t: -(t["age"] * 2 + t["pool"]))
+    out.sort(key=lambda t: -t["boom"])
     path = os.path.join(ROOT, "data", "succession_targets.json")
     json.dump(out[:400], open(path, "w"))
     print(f"[targets] {min(len(out),400)} public-safe teaser targets -> {path}")

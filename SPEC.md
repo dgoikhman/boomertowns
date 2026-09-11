@@ -101,3 +101,21 @@ Prereq before P1 ships publicly: membership layer live on Snowball
 - Roll-up Radar: fragmentation = count of aged independents per city x
   vertical (chain/consolidator detection later via name-frequency across
   cities). The Pro pitch: the list behind the radar cell.
+
+## National source stack (agreed Sep 2026)
+Foundation: SOS registries (age + universe; ~15 free-bulk states first).
+Verified-operator layers by vertical: state contractor license boards
+(CSLB/DBPR/TDLR-class bulk files), FMCSA carrier census (trucking,
+national, free), professional boards (dental/vet/funeral/childcare),
+SBA 7(a)/504 FOIA loan data (financeability + proven operators),
+state UCC bulk filings (operating-reality signal). Census ABS/CBP stay
+the demographic overlay. Commercial databases (Data Axle class) are a
+later verification layer only — never the public product's foundation;
+provenance is the brand.
+
+## The Boom Meter (business-level index)
+0-100 per business. v1: tenure 45 / wave vertical 30 / fragmentation 25.
+v2 target weights as layers land: tenure 30, verified-operator 15, wave 15,
+digital decay 15, owner-age context 10, SBA financeability 10,
+fragmentation 5. Bands: Quiet <50, Building 50-64, Loud 65-79, Boom 80+.
+Rule unchanged: readings describe data signals, never intent.
