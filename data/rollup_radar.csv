@@ -1,0 +1,1083 @@
+city,vertical,aged_independents
+Denver,manufacturing,94
+Denver,property-services,84
+Denver,retail,58
+Denver,distribution-wholesale,49
+Denver,law,38
+Colorado Springs,property-services,34
+Denver,construction,34
+Grand Junction,property-services,32
+Boulder,property-services,31
+Vail,property-services,30
+Colorado Springs,manufacturing,26
+Lakewood,property-services,26
+Aspen,property-services,26
+Fort Collins,property-services,25
+Colorado Springs,construction,24
+Aurora,property-services,24
+Denver,dental,23
+Englewood,property-services,22
+Arvada,manufacturing,21
+Colorado Springs,dental,20
+Colorado Springs,retail,20
+Longmont,property-services,19
+Englewood,manufacturing,19
+Littleton,property-services,18
+Denver,restaurant,17
+Denver,childcare,16
+Pueblo,retail,15
+Westminster,property-services,15
+Denver,auto-repair,15
+Longmont,distribution-wholesale,15
+Grand Junction,distribution-wholesale,14
+Pueblo,manufacturing,14
+Breckenridge,property-services,14
+Avon,property-services,14
+Greeley,distribution-wholesale,14
+Boulder,retail,13
+Greenwood Village,property-services,13
+Steamboat Springs,property-services,13
+Boulder,manufacturing,12
+Winter Park,property-services,12
+Denver,trucking-logistics,12
+Lakewood,distribution-wholesale,12
+Fort Collins,dental,12
+Denver,electrical,11
+Littleton,manufacturing,11
+Denver,insurance-agency,11
+Estes Park,property-services,11
+Commerce City,distribution-wholesale,11
+Golden,manufacturing,11
+Loveland,manufacturing,11
+Fort Collins,manufacturing,10
+Arvada,property-services,10
+Parker,property-services,10
+Commerce City,manufacturing,10
+Centennial,property-services,10
+Grand Junction,retail,10
+Aurora,manufacturing,10
+Loveland,property-services,10
+Fort Collins,retail,10
+Lakewood,manufacturing,10
+Arvada,retail,10
+Littleton,construction,10
+Englewood,construction,10
+Colorado Springs,auto-repair,10
+Burlington,manufacturing,9
+Sterling,manufacturing,9
+Greeley,property-services,9
+Durango,manufacturing,9
+Rocky Ford,distribution-wholesale,9
+Longmont,manufacturing,9
+Grand Junction,manufacturing,9
+Grand Lake,property-services,8
+Monte Vista,manufacturing,8
+Arvada,construction,8
+Fort Collins,distribution-wholesale,8
+Colorado Springs,distribution-wholesale,8
+Glenwood Springs,property-services,8
+Aurora,distribution-wholesale,8
+Centennial,manufacturing,8
+Canon City,manufacturing,7
+Denver,cleaning-laundry,7
+Durango,retail,7
+Fort Collins,construction,7
+Cedaredge,property-services,7
+Pueblo,construction,7
+Englewood,distribution-wholesale,7
+Frisco,property-services,7
+Lakewood,dental,7
+Snowmass Village,property-services,7
+Broomfield,manufacturing,7
+Greenwood Village,law,7
+Loveland,distribution-wholesale,7
+Littleton,distribution-wholesale,7
+Boulder,construction,7
+Brighton,manufacturing,7
+Wellington,manufacturing,7
+Lakewood,construction,7
+Grand Junction,law,7
+Westminster,manufacturing,7
+Greeley,manufacturing,7
+Paonia,property-services,7
+Grand Junction,construction,7
+Aurora,retail,7
+Crested Butte,property-services,6
+Keystone,property-services,6
+Durango,distribution-wholesale,6
+Silverthorne,property-services,6
+Dillon,property-services,6
+Berthoud,property-services,6
+Grand Junction,dental,6
+Pueblo,dental,6
+Englewood,retail,6
+Pueblo,restaurant,6
+Gunnison,property-services,6
+Wheat Ridge,property-services,6
+Durango,property-services,6
+Carbondale,property-services,6
+Boulder,restaurant,6
+Lakewood,retail,6
+Golden,property-services,6
+Colorado Springs,restaurant,6
+Denver,plumbing,6
+Wheat Ridge,retail,6
+Pueblo,electrical,6
+Longmont,retail,6
+Boulder,distribution-wholesale,6
+Centennial,retail,6
+Pueblo,property-services,6
+Loveland,construction,6
+Montrose,property-services,6
+Longmont,construction,6
+Brighton,retail,6
+Thornton,property-services,5
+Commerce City,auto-repair,5
+Yuma,manufacturing,5
+Highlands Ranch,property-services,5
+Eaton,property-services,5
+Grand Junction,auto-repair,5
+Denver,accounting,5
+Alamosa,manufacturing,5
+Arvada,distribution-wholesale,5
+Commerce City,construction,5
+Castle Rock,property-services,5
+Fort Collins,auto-repair,5
+Commerce City,trucking-logistics,5
+Colorado Springs,accounting,5
+Greenwood Village,manufacturing,5
+Fort Morgan,distribution-wholesale,5
+Cortez,distribution-wholesale,5
+Golden,trucking-logistics,5
+Sterling,distribution-wholesale,5
+Vail,retail,5
+Golden,retail,5
+La Junta,retail,5
+Littleton,retail,5
+Delta,retail,5
+Colorado Springs,plumbing,5
+Fort Lupton,manufacturing,5
+Englewood,dental,5
+Pueblo,auto-repair,5
+Pueblo,distribution-wholesale,5
+Evergreen,distribution-wholesale,5
+Monte Vista,property-services,4
+Greeley,auto-repair,4
+Silt,property-services,4
+Copper Mountain,property-services,4
+Grand Junction,landscaping,4
+La Junta,property-services,4
+Hotchkiss,distribution-wholesale,4
+Boulder,childcare,4
+Fraser,property-services,4
+Greeley,retail,4
+Louisville,property-services,4
+Pueblo,law,4
+Cortez,retail,4
+Parker,distribution-wholesale,4
+Frederick,manufacturing,4
+Denver,landscaping,4
+Colorado Springs,electrical,4
+Aurora,construction,4
+Castle Rock,construction,4
+Telluride,property-services,4
+Colorado Springs,law,4
+Lakewood,law,4
+Broomfield,auto-repair,4
+Edwards,property-services,4
+Greenwood Village,insurance-agency,4
+Boulder,law,4
+Lafayette,manufacturing,4
+La Junta,distribution-wholesale,4
+Montrose,distribution-wholesale,4
+Golden,law,4
+Lakewood,auto-repair,4
+Glenwood Springs,construction,4
+Broomfield,property-services,4
+Fort Morgan,retail,4
+Englewood,plumbing,4
+Littleton,auto-repair,4
+Centennial,insurance-agency,4
+Greeley,construction,4
+Commerce City,dental,3
+Platteville,property-services,3
+Windsor,property-services,3
+Hesperus,property-services,3
+Estes Park,retail,3
+Lamar,manufacturing,3
+Johnstown,manufacturing,3
+Loveland,childcare,3
+Morrison,distribution-wholesale,3
+Aspen,retail,3
+Paonia,distribution-wholesale,3
+Hotchkiss,property-services,3
+Vail,restaurant,3
+Monument,manufacturing,3
+Centennial,accounting,3
+Englewood,hvac,3
+Divide,property-services,3
+Englewood,law,3
+Idaho Springs,manufacturing,3
+Englewood,auto-repair,3
+Alamosa,construction,3
+Golden,dental,3
+Denver,salon-fitness,3
+Pine,distribution-wholesale,3
+Pine,property-services,3
+Evergreen,manufacturing,3
+Boulder,accounting,3
+Colorado Springs,childcare,3
+Canon City,retail,3
+Pagosa Springs,property-services,3
+Monte Vista,construction,3
+Wheat Ridge,manufacturing,3
+Arvada,auto-repair,3
+Lakewood,accounting,3
+Denver,hvac,3
+Estes Park,manufacturing,3
+Greenwood Village,retail,3
+Littleton,electrical,3
+Windsor,manufacturing,3
+Boulder,dental,3
+Yuma,retail,3
+Durango,dental,3
+Montrose,construction,3
+Evergreen,property-services,3
+Telluride,construction,3
+Monte Vista,distribution-wholesale,3
+Hugo,distribution-wholesale,3
+Aurora,trucking-logistics,3
+Yuma,distribution-wholesale,3
+Avon,restaurant,3
+Golden,distribution-wholesale,3
+Westminster,dental,3
+La Junta,manufacturing,3
+Littleton,dental,3
+Salida,construction,3
+Basalt,construction,3
+Greenwood Village,construction,3
+Rocky Ford,property-services,3
+Holly,property-services,3
+Pueblo,childcare,3
+Westminster,retail,3
+Eaton,distribution-wholesale,3
+Carbondale,distribution-wholesale,3
+Centennial,dental,3
+Glenwood Springs,law,3
+Steamboat Springs,retail,3
+Lakewood,insurance-agency,3
+Glenwood Springs,auto-repair,3
+Littleton,funeral,3
+Boulder,cleaning-laundry,3
+Grand Junction,hvac,3
+Durango,construction,3
+Denver,funeral,3
+Wheat Ridge,funeral,3
+Lafayette,construction,3
+Centennial,distribution-wholesale,3
+Colorado Springs,insurance-agency,3
+Loveland,retail,3
+Steamboat Springs,distribution-wholesale,3
+Highlands Ranch,auto-repair,3
+Longmont,trucking-logistics,3
+Colorado Springs,veterinary,3
+Franktown,construction,3
+Black Hawk,property-services,3
+Craig,manufacturing,3
+Fruita,property-services,3
+Grand Junction,insurance-agency,3
+Broomfield,law,3
+Springfield,distribution-wholesale,3
+Henderson,construction,3
+Broomfield,dental,2
+Sterling,dental,2
+Greenwood Village,auto-repair,2
+Wheat Ridge,dental,2
+Fort Collins,trucking-logistics,2
+Cortez,manufacturing,2
+Akron,manufacturing,2
+Steamboat Springs,dental,2
+Center,manufacturing,2
+Glenwood Springs,retail,2
+Durango,trucking-logistics,2
+Ignacio,property-services,2
+Delta,property-services,2
+Crawford,property-services,2
+Fort Morgan,manufacturing,2
+Eaton,landscaping,2
+Fort Lupton,retail,2
+Westcliffe,property-services,2
+Bailey,property-services,2
+Lakewood,restaurant,2
+Morrison,construction,2
+Sterling,electrical,2
+Conifer,property-services,2
+Eldorado Springs,property-services,2
+Brush,distribution-wholesale,2
+Crawford,distribution-wholesale,2
+Larkspur,property-services,2
+Trinidad,distribution-wholesale,2
+Evergreen,retail,2
+Red Feather Lakes,property-services,2
+Northglenn,dental,2
+Idaho Springs,property-services,2
+Brush,property-services,2
+Brighton,property-services,2
+Sterling,property-services,2
+Johnstown,property-services,2
+Canon City,auto-repair,2
+Breckenridge,construction,2
+Broomfield,construction,2
+Center,retail,2
+Grand Junction,trucking-logistics,2
+Fort Lupton,construction,2
+Westminster,insurance-agency,2
+Northglenn,electrical,2
+Indian Hills,manufacturing,2
+Gunnison,auto-repair,2
+Steamboat Springs,manufacturing,2
+Castle Pines,manufacturing,2
+Timnath,manufacturing,2
+Englewood,accounting,2
+Eagle,construction,2
+New Castle,property-services,2
+Glenwood Springs,dental,2
+Sterling,construction,2
+Sedalia,retail,2
+Delta,manufacturing,2
+Roggen,distribution-wholesale,2
+Greeley,dental,2
+Aspen,construction,2
+Wheat Ridge,distribution-wholesale,2
+Wiggins,manufacturing,2
+Oak Creek,manufacturing,2
+Eaton,manufacturing,2
+Colorado Springs,salon-fitness,2
+Ovid,manufacturing,2
+Otis,manufacturing,2
+Ordway,distribution-wholesale,2
+Arvada,accounting,2
+Boulder,hvac,2
+Lakewood,landscaping,2
+Glenwood Springs,distribution-wholesale,2
+Glendale,dental,2
+Clifton,construction,2
+Lamar,retail,2
+Aurora,auto-repair,2
+Wiley,property-services,2
+Fort Collins,plumbing,2
+Montrose,retail,2
+Greeley,childcare,2
+Woodland Park,construction,2
+Golden,auto-repair,2
+Broomfield,retail,2
+Durango,restaurant,2
+Snowmass Village,restaurant,2
+Fort Morgan,property-services,2
+Trinidad,property-services,2
+Manitou Springs,construction,2
+Aurora,plumbing,2
+Parker,construction,2
+Wheat Ridge,electrical,2
+Bayfield,property-services,2
+Wray,manufacturing,2
+Fruita,manufacturing,2
+Bellvue,property-services,2
+Lakewood,veterinary,2
+Avon,retail,2
+Kim,manufacturing,2
+Wiggins,distribution-wholesale,2
+Pueblo,hvac,2
+Littleton,salon-fitness,2
+Littleton,law,2
+Wheat Ridge,restaurant,2
+Johnstown,distribution-wholesale,2
+Saguache,manufacturing,2
+Colorado Springs,trucking-logistics,2
+Loveland,cleaning-laundry,2
+Wheat Ridge,construction,2
+Hayden,property-services,2
+Sterling,trucking-logistics,2
+Sedalia,construction,2
+Highlands Ranch,manufacturing,2
+Rye,manufacturing,2
+Commerce City,retail,2
+Evergreen,accounting,2
+Highlands Ranch,dental,2
+Rifle,construction,2
+Walsenburg,distribution-wholesale,2
+Strasburg,manufacturing,2
+Fort Morgan,auto-repair,2
+Erie,manufacturing,2
+Dillon,retail,2
+Greeley,landscaping,2
+Montrose,hvac,2
+Berthoud,construction,2
+Florence,distribution-wholesale,2
+Aurora,dental,2
+Breckenridge,law,2
+Fort Collins,childcare,2
+Golden,electrical,2
+Colorado Springs,funeral,2
+Lafayette,distribution-wholesale,2
+Broomfield,plumbing,2
+Loveland,restaurant,2
+Granby,property-services,2
+Mancos,property-services,2
+Gunnison,manufacturing,2
+Holyoke,trucking-logistics,2
+Lamar,distribution-wholesale,2
+Golden,construction,2
+Centennial,plumbing,2
+Lone Tree,distribution-wholesale,2
+Craig,distribution-wholesale,2
+Lone Tree,dental,2
+Mt. Crested Butte,property-services,2
+Arvada,restaurant,2
+Monument,accounting,2
+Castle Pines,construction,2
+Loveland,plumbing,2
+Loveland,landscaping,2
+Louisville,distribution-wholesale,2
+Englewood,insurance-agency,2
+Colorado Springs,hvac,2
+Parker,retail,2
+Gunnison,construction,2
+Montrose,plumbing,2
+Fort Lupton,property-services,2
+Salida,retail,2
+Fort Collins,veterinary,2
+Evergreen,auto-repair,2
+Parker,landscaping,2
+Denver,veterinary,2
+Pueblo,trucking-logistics,2
+Fountain,manufacturing,2
+Longmont,childcare,2
+Buena Vista,distribution-wholesale,2
+Limon,distribution-wholesale,2
+Englewood,electrical,2
+Greeley,insurance-agency,2
+Brandon,manufacturing,2
+Mc Clave,manufacturing,2
+Clifton,property-services,2
+Eagle,property-services,2
+Thornton,distribution-wholesale,2
+Severance,distribution-wholesale,2
+Alamosa,property-services,2
+Englewood,salon-fitness,2
+Longmont,electrical,2
+Brighton,landscaping,2
+Sedalia,distribution-wholesale,2
+Steamboat Springs,plumbing,2
+Cascade,retail,2
+Elizabeth,retail,2
+Merino,trucking-logistics,2
+Fort Morgan,trucking-logistics,2
+Gunnison,retail,2
+Canon City,restaurant,2
+Arvada,dental,2
+Palisade,construction,1
+Hasty,funeral,1
+Briggsdale,manufacturing,1
+Roggen,manufacturing,1
+Berthoud,accounting,1
+Wiley,manufacturing,1
+Villa Grove,manufacturing,1
+Meeker,retail,1
+Cortez,auto-repair,1
+Greeley,veterinary,1
+Northglenn,construction,1
+Granada,manufacturing,1
+Fleming,construction,1
+Aurora,accounting,1
+Pagosa Springs,manufacturing,1
+Durango,salon-fitness,1
+Lone Tree,construction,1
+Rocky Ford,landscaping,1
+Walsh,landscaping,1
+Alamosa,landscaping,1
+Moffat,manufacturing,1
+Cuchara,property-services,1
+Dolores,construction,1
+Montrose,auto-repair,1
+Eads,manufacturing,1
+Laporte,property-services,1
+Niwot,property-services,1
+Louisville,dental,1
+Granby,manufacturing,1
+Eaton,construction,1
+Arvada,electrical,1
+Monte Vista,landscaping,1
+Mancos,distribution-wholesale,1
+Aurora,storage,1
+Fruita,auto-repair,1
+Hugo,property-services,1
+Laporte,landscaping,1
+Henderson,electrical,1
+Florence,property-services,1
+Mead,property-services,1
+Eckert,property-services,1
+Eads,distribution-wholesale,1
+Lafayette,property-services,1
+Loveland,veterinary,1
+Arvada,trucking-logistics,1
+Broomfield,hvac,1
+Durango,childcare,1
+Fort Collins,salon-fitness,1
+Avon,construction,1
+Aspen,auto-repair,1
+Erie,distribution-wholesale,1
+Evergreen,hvac,1
+Buena Vista,retail,1
+Dacono,manufacturing,1
+Sedgwick,manufacturing,1
+Brighton,dental,1
+Pagosa Springs,roofing,1
+Longmont,veterinary,1
+Erie,retail,1
+Milliken,manufacturing,1
+Broomfield,electrical,1
+Cowdrey,manufacturing,1
+Avondale,retail,1
+Eagle,electrical,1
+Pine,manufacturing,1
+Evergreen,restaurant,1
+Golden,salon-fitness,1
+Manzanola,distribution-wholesale,1
+Pueblo,funeral,1
+Monte Vista,funeral,1
+Aspen,manufacturing,1
+Franktown,manufacturing,1
+Trinidad,landscaping,1
+Fruita,cleaning-laundry,1
+Granby,law,1
+Woodland Park,distribution-wholesale,1
+Castle Rock,dental,1
+Loveland,law,1
+Evergreen,dental,1
+Greenwood Village,childcare,1
+Frisco,childcare,1
+Hugo,landscaping,1
+Florissant,distribution-wholesale,1
+Rifle,distribution-wholesale,1
+Fraser,retail,1
+Aurora,roofing,1
+Grand Lake,landscaping,1
+Montrose,veterinary,1
+Lakewood,cleaning-laundry,1
+Akron,property-services,1
+Estes Park,dental,1
+Fort Collins,law,1
+Weldona,property-services,1
+Limon,plumbing,1
+Salida,salon-fitness,1
+Platteville,construction,1
+Cedaredge,distribution-wholesale,1
+Julesburg,property-services,1
+Aurora,childcare,1
+Sterling,restaurant,1
+Campo,restaurant,1
+Fraser,funeral,1
+Arvada,landscaping,1
+Hasty,manufacturing,1
+Florence,retail,1
+Kremmling,construction,1
+Durango,electrical,1
+Keystone,retail,1
+Penrose,manufacturing,1
+Kremmling,manufacturing,1
+Edgewater,construction,1
+Canon City,landscaping,1
+Lucerne,landscaping,1
+Hesperus,landscaping,1
+Paradox,distribution-wholesale,1
+Stoneham,distribution-wholesale,1
+Cowdrey,distribution-wholesale,1
+Northglenn,plumbing,1
+Kremmling,property-services,1
+Cedaredge,construction,1
+Bethune,distribution-wholesale,1
+Windsor,salon-fitness,1
+Carbondale,retail,1
+Pierce,distribution-wholesale,1
+Fruita,landscaping,1
+Ridgway,law,1
+Evans,construction,1
+Platteville,electrical,1
+Erie,auto-repair,1
+Alamosa,plumbing,1
+Trinidad,insurance-agency,1
+Hartsel,property-services,1
+Larkspur,distribution-wholesale,1
+Rifle,property-services,1
+Flagler,landscaping,1
+Glenwood Springs,restaurant,1
+Nucla,trucking-logistics,1
+Durango,veterinary,1
+Minturn,plumbing,1
+Buena Vista,accounting,1
+Hudson,manufacturing,1
+Eaton,salon-fitness,1
+Loveland,insurance-agency,1
+Basalt,property-services,1
+Longmont,restaurant,1
+Strasburrg,retail,1
+Bellvue,retail,1
+Brush,landscaping,1
+Avon - Co,property-services,1
+Snowmass Village,retail,1
+Limon,hvac,1
+Centennial,construction,1
+Ft Morgan,manufacturing,1
+Ault,distribution-wholesale,1
+Highlands Ranch,retail,1
+Olathe,property-services,1
+Sanford,property-services,1
+Fowler,property-services,1
+Hooper,property-services,1
+Parker,dental,1
+Fort Collins,restaurant,1
+Elizabeth,auto-repair,1
+Littleton,plumbing,1
+Northglenn,auto-repair,1
+Edgewater,manufacturing,1
+Alamosa,trucking-logistics,1
+Eagle,childcare,1
+Parker,hvac,1
+Evans,retail,1
+Dolores,distribution-wholesale,1
+Evergreen,insurance-agency,1
+Elizabeth,storage,1
+Fountain,auto-repair,1
+Kersey,retail,1
+Highlands Ranch,accounting,1
+Platteville,distribution-wholesale,1
+Austin,distribution-wholesale,1
+Watkins,manufacturing,1
+Lyons,accounting,1
+Thornton,retail,1
+Whitewater,auto-repair,1
+Lone Tree,property-services,1
+Cherry Hills Village,property-services,1
+Castle Rock,manufacturing,1
+Wheatridge,retail,1
+Cotopaxi,property-services,1
+Rocky Ford,retail,1
+Olathe,distribution-wholesale,1
+Campo,manufacturing,1
+La Jara,manufacturing,1
+Monument,trucking-logistics,1
+Alamosa,retail,1
+Longmont,salon-fitness,1
+Alamosa,dental,1
+Arvada,childcare,1
+Penrose,retail,1
+Livermore,property-services,1
+Lakeside,property-services,1
+Cimarron,property-services,1
+De Beque,property-services,1
+Buena Vista,property-services,1
+Manzanola,retail,1
+Weston,manufacturing,1
+Craig,auto-repair,1
+Indian Hills,property-services,1
+Kirk,manufacturing,1
+Salida,distribution-wholesale,1
+Lucerne,distribution-wholesale,1
+Leadville,property-services,1
+Fort Lupton,distribution-wholesale,1
+Canon City,distribution-wholesale,1
+Grand Junction,electrical,1
+Grand Lake,law,1
+Greenwood Village,accounting,1
+Breckenridge,restaurant,1
+Craig,retail,1
+Briggsdale,property-services,1
+Lone Tree,manufacturing,1
+Woodland Park,retail,1
+Atwood,landscaping,1
+Como,childcare,1
+Hugo,trucking-logistics,1
+Littleton,landscaping,1
+Delta,auto-repair,1
+Limon,landscaping,1
+Como,manufacturing,1
+Carr,landscaping,1
+Denvr,property-services,1
+Bellvue,landscaping,1
+Boulder,insurance-agency,1
+Larkspur,construction,1
+Hillrose,distribution-wholesale,1
+Brush,manufacturing,1
+La Salle,retail,1
+Mesa,retail,1
+Paonia,construction,1
+Castle Rock,electrical,1
+Commerce City,hvac,1
+Pagosa Springs,construction,1
+Julesburg,distribution-wholesale,1
+Bennett,trucking-logistics,1
+Larkspur,hvac,1
+Hamilton,manufacturing,1
+Gilcrest,manufacturing,1
+Thornton,construction,1
+Strasburg,auto-repair,1
+Lafayette,auto-repair,1
+Redstone,property-services,1
+Hudson,cleaning-laundry,1
+Windsor,accounting,1
+Delta,veterinary,1
+Fort Collins,landscaping,1
+Avon,manufacturing,1
+Pueblo West,construction,1
+Strasburg,construction,1
+Frisco,insurance-agency,1
+Basalt,distribution-wholesale,1
+Holly,manufacturing,1
+Granby,retail,1
+La Salle,landscaping,1
+Littleton,hvac,1
+Pueblo,insurance-agency,1
+Sterling,accounting,1
+Lake City,manufacturing,1
+Lakewood,plumbing,1
+Louisville,manufacturing,1
+Pueblo,plumbing,1
+Nederland,salon-fitness,1
+Dacono,distribution-wholesale,1
+Wiggins,restaurant,1
+Wolcott,construction,1
+Buena Vista,construction,1
+Greeley,salon-fitness,1
+Black Hawk,manufacturing,1
+Eckert,trucking-logistics,1
+Saguache,distribution-wholesale,1
+Aurora,landscaping,1
+Julesburg,landscaping,1
+Lafayette,law,1
+Center,hvac,1
+Seibert,manufacturing,1
+Sterling,auto-repair,1
+Pleasant View,manufacturing,1
+Coalmont,manufacturing,1
+Burns,manufacturing,1
+Hotchkiss,construction,1
+Granby,roofing,1
+Brush,retail,1
+Gypsum,construction,1
+Monument,restaurant,1
+Greeley,electrical,1
+Bailey,distribution-wholesale,1
+Thornton,manufacturing,1
+Englewood,landscaping,1
+Louviers,manufacturing,1
+Brighton,plumbing,1
+Boulder,plumbing,1
+Fort Morgan,veterinary,1
+Northglenn,hvac,1
+Ridgway,property-services,1
+Yuma,funeral,1
+Northglenn,property-services,1
+Burlington,distribution-wholesale,1
+Niwot,law,1
+Thornton,childcare,1
+Watkins,plumbing,1
+Fort Lupton,electrical,1
+Greenwood Village,dental,1
+Wheat Ridge,hvac,1
+Manitou Springs,restaurant,1
+Severance,manufacturing,1
+Montrose,electrical,1
+Del Norte,landscaping,1
+Steamboat Springs,construction,1
+Lake George,retail,1
+Florissant,property-services,1
+Byers,retail,1
+Vail,salon-fitness,1
+Johnstown,construction,1
+Westminster,accounting,1
+Centennial,electrical,1
+Broomfield,insurance-agency,1
+Estes Park,distribution-wholesale,1
+La Jara,trucking-logistics,1
+Longmont,auto-repair,1
+Aspen,distribution-wholesale,1
+Black Hawk,plumbing,1
+Westcliffe,retail,1
+Golden,veterinary,1
+Sterling,landscaping,1
+Wheat Ridge,trucking-logistics,1
+Steamboat Springs,restaurant,1
+Silverthorne,restaurant,1
+Arvada,funeral,1
+Peyton,auto-repair,1
+Aspen,trucking-logistics,1
+Granby,construction,1
+Stratton,construction,1
+Craig,veterinary,1
+Lyons,retail,1
+Lone Tree,accounting,1
+Redvale,construction,1
+Englewood,restaurant,1
+Penrose,distribution-wholesale,1
+Meeker,landscaping,1
+Aurora,law,1
+Telluride,restaurant,1
+Lakewood,salon-fitness,1
+Commerce City,plumbing,1
+Fraser,manufacturing,1
+Littleton,accounting,1
+Arvada,veterinary,1
+Trinidad,funeral,1
+Akron,electrical,1
+Meeker,electrical,1
+Westminster,distribution-wholesale,1
+Evergreen,plumbing,1
+Parker,auto-repair,1
+Gardner,dental,1
+Howard,trucking-logistics,1
+Haxtun,manufacturing,1
+Aspen,salon-fitness,1
+La Junta,dental,1
+Lakewood,hvac,1
+Cortez,trucking-logistics,1
+Roggen,cleaning-laundry,1
+Nederland,property-services,1
+Loveland,dental,1
+Windsor,insurance-agency,1
+Walsenburg,retail,1
+Durango,law,1
+Pueblo West,auto-repair,1
+Brandon,distribution-wholesale,1
+South Fork,law,1
+Wray,accounting,1
+Mount Crested Butte,property-services,1
+[Lakewood],plumbing,1
+Morrison,auto-repair,1
+San Luis,property-services,1
+Woodland Park,property-services,1
+Hayden,distribution-wholesale,1
+Calhan,landscaping,1
+Gunnison,insurance-agency,1
+Dacono,auto-repair,1
+Fairplay,construction,1
+Littleton,insurance-agency,1
+Sterling,plumbing,1
+Vail,auto-repair,1
+Lakewood,childcare,1
+Frisco,manufacturing,1
+Niwot,manufacturing,1
+Erie,roofing,1
+Dove Creek,distribution-wholesale,1
+Las Animas,property-services,1
+Niwot,childcare,1
+Two Buttes,landscaping,1
+Two Buttes,hvac,1
+Joes,manufacturing,1
+Cortez,accounting,1
+Kiowa,manufacturing,1
+Englewood,childcare,1
+Haxtun,trucking-logistics,1
+Ignacio,distribution-wholesale,1
+Holyoke,distribution-wholesale,1
+Loveland,auto-repair,1
+Montrose,dental,1
+La Jara,veterinary,1
+Idaho Springs,distribution-wholesale,1
+Elbert,retail,1
+Wheat Ridge,law,1
+Burlington,property-services,1
+Bayfield,distribution-wholesale,1
+Walden,manufacturing,1
+Durango,plumbing,1
+Colorado Springs,cleaning-laundry,1
+Antonito,property-services,1
+Meeker,manufacturing,1
+Fountain,property-services,1
+Hotchkiss,manufacturing,1
+Milliken,distribution-wholesale,1
+Sugar City,trucking-logistics,1
+Paonia,trucking-logistics,1
+Westcliffe,funeral,1
+Arvada,insurance-agency,1
+Commerce City,roofing,1
+Breckenridge,salon-fitness,1
+Craig,dental,1
+Canon City,trucking-logistics,1
+Laporte,retail,1
+Alamosa,law,1
+Westminster,trucking-logistics,1
+Olathe,landscaping,1
+Glenwood Springs,cleaning-laundry,1
+Castle Pines,property-services,1
+Lucerne,manufacturing,1
+Snowmass,manufacturing,1
+Woodland Park,childcare,1
+Gunnison,distribution-wholesale,1
+Eagle,distribution-wholesale,1
+Timnath,landscaping,1
+New Raymer,manufacturing,1
+Hugo,restaurant,1
+Gypsum,property-services,1
+Nathrop,property-services,1
+Colorado Springs,roofing,1
+Red Feather Lakes,storage,1
+Grand Lake,plumbing,1
+Iliff,manufacturing,1
+Superior,veterinary,1
+Olathe,manufacturing,1
+Manitou Springs,retail,1
+Johnstown,retail,1
+Craig,trucking-logistics,1
+Granby,distribution-wholesale,1
+Joes,trucking-logistics,1
+Ordway,manufacturing,1
+Monument,construction,1
+Sanford,manufacturing,1
+Fort Collins,funeral,1
+Brush,construction,1
+Canon City,property-services,1
+Cortez,property-services,1
+Lakewood,electrical,1
+Denver,roofing,1
+Highlands Ranch,insurance-agency,1
+Firestone,property-services,1
+Grand Junction,accounting,1
+Salida,property-services,1
+Cripple Creek,distribution-wholesale,1
+Platteville,manufacturing,1
+New Castle,manufacturing,1
+Springfield,manufacturing,1
+Pine,retail,1
+Paonia,retail,1
+Aurora,electrical,1
+Cortez,law,1
+Byers,distribution-wholesale,1
+Whitewater,retail,1
+Rifle,auto-repair,1
+Golden,restaurant,1
+South Fork,property-services,1
+Sterling,retail,1
+Cedaredge,law,1
+Keenesburg,retail,1
+Windsor,distribution-wholesale,1
+Mead,construction,1
+Mosca,property-services,1
+Nathrop,law,1
+Littleton,childcare,1
+Aspen,childcare,1
+Lamar,trucking-logistics,1
+Durango,funeral,1
+Keenesburg,manufacturing,1
+Cortez,construction,1
+Glenwood Springs,manufacturing,1
+Broomfield,restaurant,1
+Englewood,trucking-logistics,1
+Snowmass,property-services,1
+Vail,dental,1
+Dove Creek,manufacturing,1
+Wray,distribution-wholesale,1
+Berthoud,manufacturing,1
+Henderson,manufacturing,1
+Castle Rock,law,1
+Pueblo West,landscaping,1
+Manitou Springs,manufacturing,1
+Allenspark,distribution-wholesale,1
+Clifton,distribution-wholesale,1
+Nunn,manufacturing,1
+Collbran,distribution-wholesale,1
+Lyons,distribution-wholesale,1
+Alamosa,electrical,1
+Conifer,distribution-wholesale,1
+Castle Rock,auto-repair,1
+Hudson,storage,1
+Longmont,landscaping,1
+Centennial,auto-repair,1
+Brighton,hvac,1
+Walsenburg,manufacturing,1
+Highlands Ranch,construction,1
+Broomfield,distribution-wholesale,1
+Evergreen,construction,1
+Morrison,electrical,1
+Peetz,distribution-wholesale,1
+Beulah,property-services,1
+Crested Butte,distribution-wholesale,1
+Las Animas,retail,1
+Ault,manufacturing,1
+Henderson,distribution-wholesale,1
+Niwot,retail,1
+Hudson,landscaping,1
+Brighton,auto-repair,1
+Fruita,electrical,1
+Rocky Ford,funeral,1
+Gilcrest,trucking-logistics,1
+Broomfield,childcare,1
+Boulder,trucking-logistics,1
+Iliff,distribution-wholesale,1
+Louisville,roofing,1
+Monte Vista,storage,1
+Westminster,restaurant,1
+Parker,electrical,1
+Nucla,manufacturing,1
+Fort Collins,accounting,1
+Swink,manufacturing,1
+Bennett,manufacturing,1
+Keystone,restaurant,1
+Eads,landscaping,1
+Pleasant View,landscaping,1
+Breckenridge,electrical,1
+Windsor,landscaping,1
+Crestone,property-services,1
+Bennett,retail,1
+Hooper,manufacturing,1
+Morrison,property-services,1
+Mead,landscaping,1
+Cedaredge,retail,1
+Brighton,distribution-wholesale,1
+Lafayette,plumbing,1
+Naturita,dental,1
+Ignacio,landscaping,1
+Brandon,landscaping,1
+Weldona,manufacturing,1
+Branson,manufacturing,1
+Ignacio,manufacturing,1
+Rifle,law,1
+Aspen,law,1
+Holyoke,manufacturing,1
+Wheat Ridge,auto-repair,1
+Woody Creek,construction,1
+Mack,landscaping,1
+Rifle,retail,1
+Manzanola,manufacturing,1
+Pritchett,manufacturing,1
+Arvada,law,1
+Carbondale,landscaping,1
+Glenwood Springs,childcare,1
+Silt,insurance-agency,1
+Brush,childcare,1
+Limon,manufacturing,1
+Cascade,property-services,1
+Idaho Springs,restaurant,1
+Burlington,trucking-logistics,1
+Burlington,childcare,1
+Golden,accounting,1
+Granada,landscaping,1
+Lamar,plumbing,1
+Buena Vista,plumbing,1
+Berthoud,distribution-wholesale,1
+Merino,retail,1
+Carbondale,electrical,1
+Vail,childcare,1
+Holly,distribution-wholesale,1
+Towner,property-services,1
+Norwood,distribution-wholesale,1
+Almont,property-services,1
+Telluride,childcare,1
+La Jara,retail,1
+Stratton,manufacturing,1
+Ft. Morgan,electrical,1
+Cortez,dental,1
+Peyton,landscaping,1
+Edwards,construction,1
+Cedaredge,trucking-logistics,1
+Nathrop,distribution-wholesale,1
