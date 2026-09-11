@@ -1,12 +1,1 @@
-[mainstreet] over20: HTTP 429: {"message":"Too many requests","errorCode":"too-many-requests","data":{}}
-Traceback (most recent call last):
-  File "/home/runner/work/boomertowns/boomertowns/pipelines/mainstreet.py", line 87, in <module>
-    main()
-  File "/home/runner/work/boomertowns/boomertowns/pipelines/mainstreet.py", line 51, in main
-    o20 = q(base + f" AND entityformdate <= '{y20}T00:00:00.000'", "over20")
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/boomertowns/boomertowns/pipelines/mainstreet.py", line 41, in q
-    r.raise_for_status()
-  File "/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/requests/models.py", line 1167, in raise_for_status
-    raise HTTPError(http_error_msg, response=self)
-requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://data.colorado.gov/resource/4ykn-tg5h.json?%24select=upper%28principalcity%29+as+city%2C+count%281%29+as+n&%24where=entitystatus+like+%27Good+Standing%25%27+AND+principalstate+%3D+%27CO%27+AND+entityformdate+%3C%3D+%272006-09-10T00%3A00%3A00.000%27&%24group=upper%28principalcity%29&%24order=n+DESC&%24limit=400
+[done] mainstreet: 60 CO cities -> /home/runner/work/boomertowns/boomertowns/data/mainstreet_cities.csv
