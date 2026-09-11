@@ -23,7 +23,10 @@ jobs:
           set -o pipefail
           python pipelines/mainstreet.py 2>&1 | tee data/last_refresh.log
       - name: Build site
-        run: python site/build.py --base-url "${{ vars.BASE_URL || 'https://boomertowns.com' }}"
+        env:
+          FORM_ENDPOINT: ${{ vars.FORM_ENDPOINT }}
+          STRIPE_LINK_ANNUAL: ${{ vars.STRIPE_LINK_ANNUAL }}
+        run: python site/build.py --base-url "${{ vars.BASE_URL || 'https://dgoikhman.github.io/boomertowns' }}"
       - uses: actions/upload-pages-artifact@v3
         with: { path: out }
       - name: Commit refreshed dataset

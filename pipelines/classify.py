@@ -118,6 +118,47 @@ def poll(batch_id):
     print(f"[classify] wrote {ok} classifications -> {CLS}")
 
 
+REV_BANDS = {  # typical annual revenue for an independent shop — modeled from
+               # IRS SOI / Census CBP industry benchmarks; attributed to the
+               # INDUSTRY, never to a specific business
+ "hvac": "$500K–$2M", "plumbing": "$400K–$1.5M", "electrical": "$400K–$1.5M",
+ "roofing": "$500K–$2M", "landscaping": "$250K–$1M", "cleaning-laundry": "$150K–$600K",
+ "auto-repair": "$300K–$1.2M", "dental": "$700K–$1.5M", "veterinary": "$800K–$2M",
+ "accounting": "$250K–$1M", "law": "$300K–$1.5M", "insurance-agency": "$300K–$1M",
+ "manufacturing": "$1M–$5M", "distribution-wholesale": "$1M–$5M",
+ "construction": "$500K–$3M", "trucking-logistics": "$500K–$3M",
+ "restaurant": "$400K–$1.2M", "retail": "$300K–$1M", "property-services": "$250K–$1M",
+ "salon-fitness": "$150K–$500K", "childcare": "$200K–$800K", "funeral": "$500K–$1.5M",
+ "storage": "$200K–$1M",
+}
+
+def targets():
+    """Public-safe teaser feed: only cells with >=8 candidates (k-anonymity),
+    no names, ages rounded, revenue = industry-typical modeled band."""
+    from collections import defaultdict
+    cells = defaultdict(list)
+    for r in csv.DictReader(open(CLS)):
+        if float(r["confidence"] or 0) < 0.6:
+            continue
+        if r["vertical"] in ("other", "holding-nonoperating"):
+            continue
+        cells[(r["city"], r["vertical"])].append(int(r["age_years"] or 0))
+    out = []
+    for (city, vert), ages in cells.items():
+        if len(ages) < 8:
+            continue
+        ages.sort(reverse=True)
+        for a in ages[:3]:
+            out.append({"city": city, "vertical": vert,
+                        "age": int(round(a / 5.0) * 5),
+                        "pool": len(ages),
+                        "rev_band": REV_BANDS.get(vert, "$250K–$1M")})
+    out.sort(key=lambda t: -(t["age"] * 2 + t["pool"]))
+    path = os.path.join(ROOT, "data", "succession_targets.json")
+    json.dump(out[:400], open(path, "w"))
+    print(f"[targets] {min(len(out),400)} public-safe teaser targets -> {path}")
+
+
 def radar():
     agg = defaultdict(int)
     for r in csv.DictReader(open(CLS)):
@@ -139,5 +180,5 @@ if __name__ == "__main__":
     if cmd == "submit": submit()
     elif cmd == "auto": auto()
     elif cmd == "poll": poll(sys.argv[2])
-    elif cmd == "radar": radar()
+    elif cmd == "radar": radar(); targets()
     else: print(__doc__)

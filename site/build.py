@@ -16,7 +16,9 @@ sys.path.insert(0, ROOT)
 from engine.scoring import compute  # noqa: E402
 
 OUT = os.path.join(ROOT, "out")
-BASE_URL = "https://boomertowns.com"
+BASE_URL = "https://dgoikhman.github.io/boomertowns"
+STRIPE = os.environ.get("STRIPE_LINK_ANNUAL", "")
+FORM_ENDPOINT = os.environ.get("FORM_ENDPOINT", "")
 if "--base-url" in sys.argv:
     BASE_URL = sys.argv[sys.argv.index("--base-url") + 1].rstrip("/")
 TODAY = datetime.date.today().strftime("%B %Y")
@@ -64,12 +66,85 @@ a{color:var(--deep)}
 .meta{color:var(--muted);font-size:13px;border-top:1px solid var(--line);margin-top:26px;padding-top:12px}
 nav.crumbs{font-size:13px;color:var(--muted);margin-top:8px}
 .faq h3{font-size:15.5px;margin-top:14px}.faq p{margin:4px 0 14px}
+.tcard{border:1px solid var(--line);border-left:3px solid var(--accent);background:#fff;border-radius:4px;padding:11px 12px;margin:10px 0}
+.tcard .blurline{height:15px;width:58%;border-radius:3px;background:repeating-linear-gradient(90deg,#DAD5C8 0 22px,#CBC5B6 22px 44px);filter:blur(2.5px);margin:2px 0}
+.tcard .mline{font-size:13px;color:var(--muted)} .tcard .p{font-size:15px;font-weight:700;margin:2px 0}
+.unlock{border:2px solid var(--accent);border-radius:6px;background:#fff;padding:16px;margin:16px 0}
+button{font:inherit;font-size:14px;font-weight:700;padding:11px 16px;border-radius:5px;cursor:pointer;border:1px solid var(--ink);background:var(--ink);color:var(--paper);min-height:44px}
+.mapctl{display:flex;gap:8px;flex-wrap:wrap;align-items:center;padding:10px 0;font-size:13px}
+.mapctl select{font:inherit;font-size:13px;padding:5px;border:1px solid var(--line);border-radius:4px;background:#fff}
+.srch{position:relative;margin-top:8px}.srch input{width:100%;max-width:340px;font:inherit;font-size:14px;padding:8px 10px;border:1px solid var(--line);border-radius:5px;background:#fff}
+#qr{position:absolute;z-index:9;background:#fff;border:1px solid var(--line);border-radius:5px;max-width:340px;width:100%}
+#qr a{display:block;padding:8px 10px;font-size:14px;text-decoration:none;color:var(--ink);border-bottom:1px solid var(--line)}#qr a:last-child{border-bottom:none}
+.field input{font:inherit;font-size:14px;padding:9px;border:1px solid var(--line);border-radius:4px}
 </style></head><body><div class="wrap">
 <header><a href="{{ base }}/">BOOMER<span>TOWNS</span></a>
-<div class="nav"><a href="{{ base }}/">Succession Index</a><a href="{{ base }}/methodology/">Methodology</a></div></header>
+<div class="nav"><a href="{{ base }}/targets/"><b>Targets</b></a><a href="{{ base }}/">Succession Index</a><a href="{{ base }}/partners/">Partners</a><a href="{{ base }}/methodology/">Methodology</a></div>
+<div class="srch"><input id="q" placeholder="Search towns &amp; verticals…" autocomplete="off"><div id="qr"></div></div></header>
+<script>
+var SIDX={{ sidx_json }};
+(function(){var q=document.getElementById("q"),qr=document.getElementById("qr");
+function render(){var s=q.value.toLowerCase().trim();if(!s){qr.innerHTML="";return;}
+var hits=SIDX.filter(function(m){return m.n.toLowerCase().indexOf(s)>-1}).slice(0,8);
+qr.innerHTML=hits.length?hits.map(function(m){return '<a href="{{ base }}'+m.u+'">'+m.n+'</a>'}).join(""):'<a>no match</a>';}
+q.addEventListener("input",render);q.addEventListener("focus",render);
+document.addEventListener("click",function(e){if(e.target&&e.target.closest&&!e.target.closest(".srch"))qr.innerHTML="";});})();
+</script>
 {{ body }}
 <div class="meta"><p>Source: state Secretary of State public business registries (entity status and original filing dates), aggregated at city level. Scores describe registry data patterns, never any owner's intent. No individual businesses or owners are identified on public pages. Last reviewed {{ today }}. <a href="{{ base }}/methodology/">Methodology</a>.</p></div>
 </div></body></html>"""
+
+TARGETS = """
+<nav class="crumbs"><a href="{{ base }}/">BoomerTowns</a> › Targets</nav>
+<h1>Succession targets: the businesses most likely to sell next</h1>
+<p class="lede">Individual long-tenured businesses surfaced from public registries and scored on succession signals — before they're listed anywhere. {% if targets %}Filter the feed below; <b>names and full profiles unlock with membership.</b>{% else %}The first classification sweep is running — the feed goes live when it lands. The city-level <a href="{{ base }}/">Succession Index</a> is open now.{% endif %}</p>
+{% if targets %}<div class="mapctl">
+<label>City <select id="t-c"><option value="">all</option></select></label>
+<label>Vertical <select id="t-v"><option value="">all</option></select></label>
+<label>Min age <select id="t-a"><option value="0">any</option><option value="20">20+ yrs</option><option value="30">30+ yrs</option><option value="40">40+ yrs</option></select></label>
+</div>
+<p class="quick" id="t-count"></p><div id="t-list"></div>
+<div class="unlock"><b>Unlock the full target list — names, ages, filters, exports</b><br>
+Every scored business statewide, vertical roll-up lists, and thesis alerts when new targets match your criteria. Founding members: <b>$490/yr locked for life</b> (first 20). Letter-first outreach tooling; permanent opt-out honored.<br>
+<a href="{{ stripe or (base + '/methodology/') }}"><button style="margin-top:10px">Unlock BoomerTowns Pro</button></a></div>
+<div class="note"><b>Save your thesis.</b> Tell us vertical × geography and get alerted as new targets qualify.
+{% if form_endpoint %}<form action="{{ form_endpoint }}" method="POST" style="margin-top:8px"><input type="hidden" name="type" value="thesis"><input type="email" name="email" required placeholder="you@fund.com" style="width:44%"><input type="text" name="thesis" required placeholder="e.g. HVAC roll-up, Front Range CO" style="width:50%;margin-left:4px"><button type="submit" style="margin-top:8px">Save my thesis</button></form>
+{% else %}<span style="color:var(--muted);font-size:13.5px"> Alert signups open shortly.</span>{% endif %}</div>
+<script>
+var T={{ targets_json }};
+var C=[...new Set(T.map(t=>t.city))].sort(),V=[...new Set(T.map(t=>t.vertical))].sort();
+document.getElementById("t-c").innerHTML+=C.map(c=>"<option>"+c+"</option>").join("");
+document.getElementById("t-v").innerHTML+=V.map(v=>"<option>"+v+"</option>").join("");
+function draw(){var c=document.getElementById("t-c").value,v=document.getElementById("t-v").value,a=+document.getElementById("t-a").value;
+var f=T.filter(t=>(!c||t.city==c)&&(!v||t.vertical==v)&&t.age>=a);
+document.getElementById("t-count").textContent=f.length+" locked targets match";
+document.getElementById("t-list").innerHTML=f.slice(0,40).map(t=>
+ '<div class="tcard"><div class="blurline"></div><div class="p">'+t.vertical.replace(/-/g," ")+' · ~'+t.age+' years in business</div>'+
+ '<div class="mline">'+t.city+', CO · one of '+t.pool+' aged '+t.vertical.replace(/-/g," ")+' businesses here · typical independent revenue: '+t.rev_band+' (modeled, industry-level)</div>'+
+ '<div class="mline">Name, exact age &amp; profile unlock with membership</div></div>').join("");}
+["t-c","t-v","t-a"].forEach(i=>document.getElementById(i).addEventListener("change",draw));draw();
+</script>{% endif %}
+{% if radar %}<h2>The Roll-up Radar</h2>
+<p>Fragmentation by city × vertical — the count of aged independents, i.e. roll-up raw material:</p>
+<table><tr><th>City</th><th>Vertical</th><th class="n">Aged independents</th></tr>
+{% for r in radar %}<tr><td>{{ r.city }}</td><td>{{ r.vertical }}</td><td class="n">{{ r.aged_independents }}</td></tr>
+{% endfor %}</table>{% endif %}
+<p class="quick">Sources: public registry filing dates; industry classification is model-scored with low-confidence entries excluded. Revenue bands are industry-typical modeled figures, never a claim about a specific business.</p>"""
+
+PARTNERS = """
+<nav class="crumbs"><a href="{{ base }}/">BoomerTowns</a> › Partners</nav>
+<h1>Get featured where business buyers hunt</h1>
+<p class="lede">Searchers and roll-up teams use BoomerTowns to find tomorrow's sellers. They need brokers with inventory, SBA lenders, and diligence pros. Apply below — founding partners lock founding terms.</p>
+<h2 id="brokers">Brokers — free distribution for your listings</h2>
+<p>Submit deals for listing on target pages (with permission and provenance) and receive matched buyer interest from your markets.</p>
+{% if form_endpoint %}<form action="{{ form_endpoint }}" method="POST"><input type="hidden" name="partner_type" value="broker"><input type="email" name="email" required placeholder="you@brokerage.com" style="width:46%"><input type="text" name="market" required placeholder="Markets / verticals covered" style="width:48%;margin-left:4px"><button type="submit" style="margin-top:8px">Apply as a broker partner</button></form>{% else %}<div class="note">Applications open shortly.</div>{% endif %}
+<h2 id="lenders">SBA &amp; acquisition lenders</h2>
+<p>Buyers arrive with a target attached. Referrals route to matched lenders per-funded.</p>
+{% if form_endpoint %}<form action="{{ form_endpoint }}" method="POST"><input type="hidden" name="partner_type" value="lender"><input type="email" name="email" required placeholder="you@lender.com" style="width:46%"><input type="text" name="market" required placeholder="States + products (SBA 7a, conventional…)" style="width:48%;margin-left:4px"><button type="submit" style="margin-top:8px">Apply as a lending partner</button></form>{% else %}<div class="note">Applications open shortly.</div>{% endif %}
+<h2 id="diligence">QoE, legal &amp; diligence providers</h2>
+<p>Every serious buyer needs quality-of-earnings and deal counsel; matched referrals by deal size and geography.</p>
+{% if form_endpoint %}<form action="{{ form_endpoint }}" method="POST"><input type="hidden" name="partner_type" value="diligence"><input type="email" name="email" required placeholder="you@firm.com" style="width:46%"><input type="text" name="market" required placeholder="Services + typical deal size" style="width:48%;margin-left:4px"><button type="submit" style="margin-top:8px">Apply as a diligence partner</button></form>{% else %}<div class="note">Applications open shortly.</div>{% endif %}
+<p class="quick">Partners are verified; investor and owner trust is the product.</p>"""
 
 CITY = """
 <nav class="crumbs"><a href="{{ base }}/">Succession Index</a> › {{ c.city }}</nav>
@@ -92,8 +167,13 @@ CITY = """
 </div>"""
 
 INDEX = """
-<h1>The Succession Index: where America's business handover concentrates</h1>
+<h1>The businesses most likely to sell next — found before they're listed</h1>
 <p class="lede">BoomerTowns maps the silver tsunami — long-tenured, founder-owned businesses approaching ownership transition. Launch state: Colorado. <b>{{ top.c.city }}</b> leads with {{ top.c.share20 }}% of {{ "{:,}".format(top.c.total_active) }} active businesses registered 20+ years (Succession Score {{ top.score }}/100), per Secretary of State records.</p>
+{% if teaser %}<h2 style="margin-top:18px">Today's top succession targets</h2>
+{% for t in teaser %}<div class="tcard"><div class="blurline"></div><div class="p">{{ t.vertical.replace("-", " ") }} · ~{{ t.age }} years in business</div>
+<div class="mline">{{ t.city }}, CO · typical independent revenue {{ t.rev_band }} (modeled)</div></div>
+{% endfor %}<p class="quick"><b><a href="{{ base }}/targets/">See all targets — names unlock with membership →</a></b></p>{% endif %}
+<h2>Explore the towns behind the targets</h2>
 <table><tr><th>#</th><th>City</th><th class="n">Active</th><th class="n">20+ yrs</th><th class="n">Share</th><th class="n">Score</th></tr>
 {% for r in rows %}<tr><td>{{ loop.index }}</td><td><a href="{{ base }}/{{ r.c.slug }}/">{{ r.c.city }}, {{ r.c.state }}</a></td><td class="n">{{ "{:,}".format(r.c.total_active) }}</td><td class="n">{{ "{:,}".format(r.c.over20) }}</td><td class="n">{{ r.c.share20 }}%</td><td class="n"><span class="chip {{ r.band }}">{{ r.score }}</span></td></tr>
 {% endfor %}</table>
@@ -108,7 +188,7 @@ METHOD = """
 <h2>What it is not</h2>
 <p>Not a claim about any owner's plans. Not a listing service. Scores describe registry data patterns; every future business-level tool ships with a claim, correction, and permanent opt-out flow.</p>"""
 
-env = Environment(loader=DictLoader({"base": BASE, "city": CITY, "index": INDEX, "method": METHOD}))
+env = Environment(loader=DictLoader({"base": BASE, "city": CITY, "index": INDEX, "method": METHOD, "targets": TARGETS, "partners": PARTNERS}))
 
 
 def _font(sz):
@@ -142,7 +222,7 @@ def make_og(fname, heading, stat, score=None, band=None):
 
 def page(path, title, description, body_html, jsonld=None, og_image=None):
     full = env.get_template("base").render(
-        title=title, description=description, body=body_html,
+        title=title, description=description, body=body_html, sidx_json=SIDX_JSON,
         canonical=f"{BASE_URL}{path}", base=BASE_URL, today=TODAY,
         og_image=og_image, jsonld=[json.dumps(x) for x in (jsonld or [])])
     d = os.path.join(OUT, path.strip("/")) if path != "/404.html" else OUT
@@ -152,7 +232,13 @@ def page(path, title, description, body_html, jsonld=None, og_image=None):
     return path
 
 
+TARGETS_DATA = []
+SIDX_JSON = "[]"
+
 def main():
+    global TARGETS_DATA
+    tp = os.path.join(ROOT, "data", "succession_targets.json")
+    TARGETS_DATA = json.load(open(tp)) if os.path.exists(tp) else []
     raw = list(csv.DictReader(open(os.path.join(ROOT, "data", "mainstreet_cities.csv"))))
     rows = []
     for r in raw:
@@ -185,12 +271,32 @@ def main():
                          f"{c.total_active:,} active businesses in {c.city}; {c.share20}% registered 20+ years. Succession Score {r['score']}/100 from public registry data.",
                          body, [faq_ld], og_image=og))
 
+    global SIDX_JSON
+    SIDX_JSON = json.dumps(
+        [{"n": f"{r['c'].city}, {r['c'].state}", "u": f"/{r['c'].slug}/"} for r in rows]
+        + [{"n": v.replace("-", " ") + " — succession targets", "u": "/targets/"} for v in
+           sorted({t["vertical"] for t in TARGETS_DATA})]
+        + [{"n": "Succession targets (all)", "u": "/targets/"},
+           {"n": "The Succession Index", "u": "/"},
+           {"n": "Partners — brokers, lenders, diligence", "u": "/partners/"}])
+    tpath = os.path.join(ROOT, "data", "rollup_radar.csv")
+    radar_rows = list(csv.DictReader(open(tpath)))[:25] if os.path.exists(tpath) else []
+    urls.append(page("/targets/",
+        "Succession Targets: Businesses Most Likely to Sell Next",
+        "Long-tenured businesses surfaced from public registries and scored on succession signals — filterable by city, vertical and age. Names unlock with membership.",
+        env.get_template("targets").render(base=BASE_URL, targets=bool(TARGETS_DATA),
+            targets_json=json.dumps(TARGETS_DATA), radar=radar_rows,
+            stripe=STRIPE, form_endpoint=FORM_ENDPOINT)))
+    urls.append(page("/partners/", "Partner With BoomerTowns: Brokers, Lenders, Diligence",
+        "Brokers, SBA lenders and diligence providers: apply to receive matched buyers from the succession-hunting audience.",
+        env.get_template("partners").render(base=BASE_URL, form_endpoint=FORM_ENDPOINT)))
     top = rows[0]
     og_d = make_og("default.png", ["The Succession Index", ""],
                    f"Where America's business handover concentrates · {TODAY}", None, None)
     urls.append(page("/", f"BoomerTowns: The Succession Index ({YEAR})",
                      f"City-level map of long-tenured businesses approaching ownership transition. {top['c'].city} leads at {top['c'].share20}% aged 20+ years.",
-                     env.get_template("index").render(rows=rows, top=top, base=BASE_URL),
+                     env.get_template("index").render(rows=rows, top=top, base=BASE_URL,
+                         teaser=TARGETS_DATA[:3]),
                      og_image=og_d))
     urls.append(page("/methodology/", "Succession Score Methodology — BoomerTowns",
                      "How the Succession Score is computed from public registry filing dates, and what it is not.",
