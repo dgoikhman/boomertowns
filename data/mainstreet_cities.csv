@@ -1,61 +1,61 @@
 slug,city,state,total_active,over20,over30,share20,share30,as_of
-denver-co,Denver,CO,190765,15884,5205,8.3,2.7,2026-09-11
-colorado-springs-co,Colorado Springs,CO,73435,7660,2361,10.4,3.2,2026-09-11
-aurora-co,Aurora,CO,42592,3166,1012,7.4,2.4,2026-09-11
-boulder-co,Boulder,CO,30622,4269,1383,13.9,4.5,2026-09-11
-fort-collins-co,Fort Collins,CO,27699,3760,1111,13.6,4.0,2026-09-11
-littleton-co,Littleton,CO,25781,3637,1039,14.1,4.0,2026-09-11
-lakewood-co,Lakewood,CO,20086,2688,953,13.4,4.7,2026-09-11
-centennial-co,Centennial,CO,17449,2451,715,14.0,4.1,2026-09-11
-arvada-co,Arvada,CO,16679,1877,571,11.3,3.4,2026-09-11
-longmont-co,Longmont,CO,16346,2276,639,13.9,3.9,2026-09-11
-englewood-co,Englewood,CO,15753,2527,908,16.0,5.8,2026-09-11
-parker-co,Parker,CO,15547,1572,386,10.1,2.5,2026-09-11
-grand-junction-co,Grand Junction,CO,14574,2447,811,16.8,5.6,2026-09-11
-castle-rock-co,Castle Rock,CO,13407,1245,311,9.3,2.3,2026-09-11
-loveland-co,Loveland,CO,12695,1792,556,14.1,4.4,2026-09-11
-greenwood-village-co,Greenwood Village,CO,11793,1880,552,15.9,4.7,2026-09-11
-broomfield-co,Broomfield,CO,11672,1280,362,11.0,3.1,2026-09-11
-thornton-co,Thornton,CO,11381,706,180,6.2,1.6,2026-09-11
-pueblo-co,Pueblo,CO,11216,1640,692,14.6,6.2,2026-09-11
-highlands-ranch-co,Highlands Ranch,CO,11108,1172,224,10.6,2.0,2026-09-11
-golden-co,Golden,CO,11015,1618,553,14.7,5.0,2026-09-11
-greeley-co,Greeley,CO,10815,1571,573,14.5,5.3,2026-09-11
-westminster-co,Westminster,CO,9852,1462,506,14.8,5.1,2026-09-11
-durango-co,Durango,CO,8192,1400,420,17.1,5.1,2026-09-11
-brighton-co,Brighton,CO,6964,734,208,10.5,3.0,2026-09-11
-commerce-city-co,Commerce City,CO,6891,469,187,6.8,2.7,2026-09-11
-windsor-co,Windsor,CO,6639,652,135,9.8,2.0,2026-09-11
-aspen-co,Aspen,CO,6181,1190,426,19.3,6.9,2026-09-11
-steamboat-springs-co,Steamboat Springs,CO,5947,1095,343,18.4,5.8,2026-09-11
-montrose-co,Montrose,CO,5634,929,272,16.5,4.8,2026-09-11
-lafayette-co,Lafayette,CO,5614,631,171,11.2,3.0,2026-09-11
-evergreen-co,Evergreen,CO,5498,818,268,14.9,4.9,2026-09-11
-wheat-ridge-co,Wheat Ridge,CO,5421,747,283,13.8,5.2,2026-09-11
-erie-co,Erie,CO,5209,445,106,8.5,2.0,2026-09-11
-monument-co,Monument,CO,5029,483,118,9.6,2.3,2026-09-11
-louisville-co,Louisville,CO,4621,690,198,14.9,4.3,2026-09-11
-carbondale-co,Carbondale,CO,4069,678,188,16.7,4.6,2026-09-11
-lone-tree-co,Lone Tree,CO,3671,436,91,11.9,2.5,2026-09-11
-peyton-co,Peyton,CO,3660,221,55,6.0,1.5,2026-09-11
-glenwood-springs-co,Glenwood Springs,CO,3635,751,273,20.7,7.5,2026-09-11
-breckenridge-co,Breckenridge,CO,3385,613,228,18.1,6.7,2026-09-11
-berthoud-co,Berthoud,CO,3085,448,122,14.5,4.0,2026-09-11
-avon-co,Avon,CO,3081,596,242,19.3,7.9,2026-09-11
-northglenn-co,Northglenn,CO,2928,213,76,7.3,2.6,2026-09-11
-salida-co,Salida,CO,2891,356,104,12.3,3.6,2026-09-11
-edwards-co,Edwards,CO,2833,537,174,19.0,6.1,2026-09-11
-elizabeth-co,Elizabeth,CO,2660,303,81,11.4,3.0,2026-09-11
-johnstown-co,Johnstown,CO,2543,222,72,8.7,2.8,2026-09-11
-pagosa-springs-co,Pagosa Springs,CO,2513,355,113,14.1,4.5,2026-09-11
-morrison-co,Morrison,CO,2500,330,112,13.2,4.5,2026-09-11
-castle-pines-co,Castle Pines,CO,2496,238,44,9.5,1.8,2026-09-11
-vail-co,Vail,CO,2494,529,242,21.2,9.7,2026-09-11
-canon-city-co,Canon City,CO,2484,401,151,16.1,6.1,2026-09-11
-telluride-co,Telluride,CO,2403,535,169,22.3,7.0,2026-09-11
-basalt-co,Basalt,CO,2184,472,166,21.6,7.6,2026-09-11
-woodland-park-co,Woodland Park,CO,2124,276,92,13.0,4.3,2026-09-11
-superior-co,Superior,CO,2110,186,24,8.8,1.1,2026-09-11
-estes-park-co,Estes Park,CO,2085,451,175,21.6,8.4,2026-09-11
-gunnison-co,Gunnison,CO,2040,397,154,19.5,7.5,2026-09-11
-fort-lupton-co,Fort Lupton,CO,1963,216,77,11.0,3.9,2026-09-11
+denver-co,Denver,CO,190341,15885,5200,8.3,2.7,2026-10-02
+colorado-springs-co,Colorado Springs,CO,73079,7689,2374,10.5,3.2,2026-10-02
+aurora-co,Aurora,CO,42292,3171,1008,7.5,2.4,2026-10-02
+boulder-co,Boulder,CO,30198,4282,1385,14.2,4.6,2026-10-02
+fort-collins-co,Fort Collins,CO,27558,3769,1108,13.7,4.0,2026-10-02
+littleton-co,Littleton,CO,25707,3639,1044,14.2,4.1,2026-10-02
+lakewood-co,Lakewood,CO,19997,2674,950,13.4,4.8,2026-10-02
+centennial-co,Centennial,CO,17418,2446,716,14.0,4.1,2026-10-02
+arvada-co,Arvada,CO,16633,1871,569,11.2,3.4,2026-10-02
+longmont-co,Longmont,CO,16299,2277,642,14.0,3.9,2026-10-02
+englewood-co,Englewood,CO,15748,2530,910,16.1,5.8,2026-10-02
+parker-co,Parker,CO,15496,1576,384,10.2,2.5,2026-10-02
+grand-junction-co,Grand Junction,CO,14547,2460,823,16.9,5.7,2026-10-02
+castle-rock-co,Castle Rock,CO,13393,1254,312,9.4,2.3,2026-10-02
+loveland-co,Loveland,CO,12635,1799,558,14.2,4.4,2026-10-02
+greenwood-village-co,Greenwood Village,CO,11794,1922,571,16.3,4.8,2026-10-02
+broomfield-co,Broomfield,CO,11676,1280,360,11.0,3.1,2026-10-02
+thornton-co,Thornton,CO,11356,709,186,6.2,1.6,2026-10-02
+pueblo-co,Pueblo,CO,11122,1644,696,14.8,6.3,2026-10-02
+highlands-ranch-co,Highlands Ranch,CO,11083,1172,226,10.6,2.0,2026-10-02
+golden-co,Golden,CO,11004,1621,561,14.7,5.1,2026-10-02
+greeley-co,Greeley,CO,10793,1580,577,14.6,5.3,2026-10-02
+westminster-co,Westminster,CO,9836,1479,507,15.0,5.2,2026-10-02
+durango-co,Durango,CO,8122,1401,417,17.2,5.1,2026-10-02
+brighton-co,Brighton,CO,6925,725,206,10.5,3.0,2026-10-02
+commerce-city-co,Commerce City,CO,6852,463,183,6.8,2.7,2026-10-02
+windsor-co,Windsor,CO,6611,657,135,9.9,2.0,2026-10-02
+aspen-co,Aspen,CO,6188,1191,423,19.2,6.8,2026-10-02
+steamboat-springs-co,Steamboat Springs,CO,5929,1092,344,18.4,5.8,2026-10-02
+montrose-co,Montrose,CO,5612,925,273,16.5,4.9,2026-10-02
+lafayette-co,Lafayette,CO,5596,636,172,11.4,3.1,2026-10-02
+evergreen-co,Evergreen,CO,5461,815,265,14.9,4.9,2026-10-02
+wheat-ridge-co,Wheat Ridge,CO,5383,749,281,13.9,5.2,2026-10-02
+erie-co,Erie,CO,5185,441,106,8.5,2.0,2026-10-02
+monument-co,Monument,CO,5004,482,114,9.6,2.3,2026-10-02
+louisville-co,Louisville,CO,4621,693,198,15.0,4.3,2026-10-02
+carbondale-co,Carbondale,CO,4069,680,189,16.7,4.6,2026-10-02
+peyton-co,Peyton,CO,3646,221,55,6.1,1.5,2026-10-02
+lone-tree-co,Lone Tree,CO,3645,441,91,12.1,2.5,2026-10-02
+glenwood-springs-co,Glenwood Springs,CO,3620,753,278,20.8,7.7,2026-10-02
+breckenridge-co,Breckenridge,CO,3381,615,226,18.2,6.7,2026-10-02
+avon-co,Avon,CO,3140,596,243,19.0,7.7,2026-10-02
+berthoud-co,Berthoud,CO,3072,453,123,14.7,4.0,2026-10-02
+northglenn-co,Northglenn,CO,2909,211,73,7.3,2.5,2026-10-02
+salida-co,Salida,CO,2875,351,102,12.2,3.5,2026-10-02
+edwards-co,Edwards,CO,2823,544,174,19.3,6.2,2026-10-02
+elizabeth-co,Elizabeth,CO,2682,308,81,11.5,3.0,2026-10-02
+johnstown-co,Johnstown,CO,2548,222,75,8.7,2.9,2026-10-02
+pagosa-springs-co,Pagosa Springs,CO,2506,357,115,14.2,4.6,2026-10-02
+morrison-co,Morrison,CO,2492,329,113,13.2,4.5,2026-10-02
+castle-pines-co,Castle Pines,CO,2486,241,44,9.7,1.8,2026-10-02
+vail-co,Vail,CO,2482,528,239,21.3,9.6,2026-10-02
+canon-city-co,Canon City,CO,2459,397,149,16.1,6.1,2026-10-02
+telluride-co,Telluride,CO,2389,538,170,22.5,7.1,2026-10-02
+basalt-co,Basalt,CO,2176,468,164,21.5,7.5,2026-10-02
+woodland-park-co,Woodland Park,CO,2105,281,96,13.3,4.6,2026-10-02
+estes-park-co,Estes Park,CO,2081,458,180,22.0,8.6,2026-10-02
+superior-co,Superior,CO,2079,186,25,8.9,1.2,2026-10-02
+gunnison-co,Gunnison,CO,2030,397,152,19.6,7.5,2026-10-02
+eagle-co,Eagle,CO,1970,338,86,17.2,4.4,2026-10-02
